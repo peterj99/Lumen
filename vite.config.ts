@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      base: "/lumen-app/", // <--- THIS IS THE CRITICAL LINE. CHANGE 'lumen-app' TO YOUR REPO NAME.
       server: {
         port: 3000,
         host: '0.0.0.0',
